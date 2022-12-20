@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Premuim - Spotify (BR)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<section id="menu">
+    <div id="menu-nav">
+        <li id="menu-close" onclick="closeMenu()">X</li>
+        <div id="menu-nav-links-1">
+            <li><a href="https://www.spotify.com/br/premium">Premium</a></li>
+            <li><a href="https://support.spotify.com">Suporte</a></li>
+            <li><a href="https://www.spotify.com/br/download">Baixar</a></li>
+        </div>
+        <div id="menu-nav-links-2">
+            <li>__</li>
+            <li><a href="https://www.spotify.com/br/signup">Inscrever-se</a></li>
+            <li><a href="https://www.spotify.com/br/login">Entrar</a></li>
+        </div>
+        <div id="spotify-logo-menu">
+            <a href="https://www.spotify.com/br/"><img id="spotify-logo-menu" src="images/spotify-logo.svg"
+            alt="Logo do Spotify"></a>
+        </div>
+    </div>
+</section>
+
+<body>
+    <header>
+        <a href="https://www.spotify.com/br/"><img id="spotify-logo" src="images/spotify-logo.svg"
+                alt="Logo do Spotify"></a>
+        <nav>
+            <a href="https://www.spotify.com/br/premium">Premium</a>          
+            <a href="https://support.spotify.com">Suporte</a>
+            <a href="https://www.spotify.com/br/download">Baixar</a> |
+            <a href="https://www.spotify.com/br/signup">Inscrever-se</a>
+            <a href="https://www.spotify.com/br/login">Entrar</a>
+        </nav>
+        <li id="menu-show" onclick="showMenu()"><img src="images/menu-hamburger-icon.png" alt="Menu Hamburger"></li>
+    </header>
+
+    <div class="container">
+    <main>
+        <section id="main-section">
+            <h1>Aproveite 1 mês grátis de Premium</h1>
+            <h3>Depois, pague somente R$ 19,90/mês. Cancele quando quiser.</h3>
+            <div id="buttons">
+                <button id="start-1"
+                onclick="location.href='https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fwww.spotify.com%2Fbr%2Fpurchase%2Foffer%2Flatam-2mf-q1-22-trial-2m%2F%3Fmarketing-campaign-id%3Dq1_2022_latam_2mf%26country%3DBR'">COMEÇAR</button>
+                <button id="plans" onclick="location.href='#premium'"">VER PLANOS</button>
+            </div>
+            <p><a id="terms" href="https://www.spotify.com/br/legal/premium-promotional-offer-terms/">Sujeito a Termos e
+                    Condições</a>. Os 2 meses grátis não estão disponíveis para usuários que já experimentaram
+                o Premium.</p>
+        </section>
+
+        <section id="why-premium">
+            <h2>Por que ser Premium?</h2>
+            <div class="why-premium">
+                <div id="why-premium-1">
+                    <div class="why-premium-circle">
+                        <img src="images/premium-1.png" id="circle-1" alt="Nota musical">
+                        <div class="why-premium-description">
+                            <h4>Modo offline.</h4>
+                            <p>Ouça música onde estiver.</p>
+                        </div>
+                    </div>
+                    <div class="why-premium-circle">
+                        <img src="images/premium-2.png" id="circle-2" alt="Celular">
+                        <div class="why-premium-description">
+                            <h4>Ouça músicas sem anúncios.</h4>
+                            <p>Curta música, sem parar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="why-premium-2">
+                    <div class="why-premium-circle">
+                        <img src="images/premium-3.png" id="circle-3" alt="Nota musical">
+                        <div class="why-premium-description">
+                            <h4>Ouça na ordem que quiser.</h4>
+                            <p>Qualquer música em qualquer ordem.</p>
+                        </div>
+                    </div>
+                    <div class="why-premium-circle">
+                        <img src="images/premium-4.svg" id="circle-4" alt="Fone de ouvido">
+                        <div class="why-premium-description">
+                            <h4>Qualidade de som superior.</h4>
+                            <p>Sinta o som.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="premium">
+            <div id="premium-description">
+                <h2>Escolha seu plano Premium</h2><br>
+                <h5>Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</h5>
+                <div id="cards">
+                    <img src="images/card-1.svg" alt="Logotipo da Visa">
+                    <img src="images/card-2.svg" alt="Logotipo da Mastercard">
+                    <img src="images/card-3.svg" alt="Logotipo da American Express">
+                    <img src="images/card-4.svg" alt="Logotipo da Elo">
+                    <img src="images/card-5.svg" alt="Logotipo da Hipercard">
+                    <p onmouseover="showCards()" onmouseleave="hideCards()">+ outros 11</p>
+                    <div id="others-cards">
+                        <div class="others-cards-rows">
+                            <li><img src="images/others-cards-1.svg" alt="Logotipo do Itaú"></li>
+                            <li><img src="images/others-cards-2.svg" alt="Logotipo do Santander"></li>
+                            <li><img src="images/others-cards-3.svg" alt="Logotipo do Bradesco"></li>
+                            <li><img src="images/others-cards-4.svg" alt="Logotipo do Banco do Brasil"></li>
+                        </div>
+                        <div class="others-cards-rows">
+                            <li><img src="images/others-cards-5.svg" alt="Logotipo da Caixa"></li>
+                            <li><img src="images/others-cards-6.svg" alt="Logotipo do Banco Inter"></li>
+                            <li><img src="images/others-cards-7.svg" alt="Logotipo do Boleto"></li>
+                            <li><img src="images/others-cards-8.svg" alt="Logotipo do Nubank"></li>
+                        </div>
+                        <div class="others-cards-rows">
+                            <li><img src="images/others-cards-9.svg" alt="Logotipo do Banco Original"></li>
+                            <li><img src="images/others-cards-10.svg" alt="Logotipo do Banco Next"></li>
+                            <li><img src="images/others-cards-11.svg" alt="Logotipo do Sicredi"></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="premium-cards">
+                <div class="premium-cards">
+                    <div class="header-premium-cards">
+                        <span class="premium-cards-header-blue">1 mês grátis ao assinar</span>
+                        <span class="premium-cards-payment">Pagamento único disponível</span>
+                    </div>
+                    <span class="premium-cards-type">Individual</span>
+                    <p class="premium-cards-price">R$ 19,90/mês após o período da oferta</p>
+                    <span class="premium-cards-accounts">1 conta</span>
+                    <hr id="first-row">
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Ouça músicas sem anúncios
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Ouça em qualquer lugar — até no modo offiline
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Escolha a música que quer ouvir
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Faça um plano pré-pago ou uma assinatura
+                    </div>
+
+                    <div class="start-button" id="start-button-1">
+                        <a href="/br/plan/individual"><button class="start-2">COMEÇAR</button></a>
+                    </div>
+                    <div class="terms-2">
+                        <p id="terms-2-1">Somente no plano Individual. Depois, é só R$ 19,90/mês.<a class="terms-underline" href="google.com"> Sujeito a Termos e Condições</a>. Disponível
+                            apenas para quem nunca usou o Premium. Esta oferta termina em 19 de maio de 2022.</p>
+                    </div>
+                </div>
+                <div class="premium-cards">
+                    <div class="header-premium-cards">
+                        <span class="premium-cards-header-blue">1 mês grátis ao assinar</span>
+                        <span class="premium-cards-payment">Pagamento único disponível</span>
+                    </div>
+                    <span class="premium-cards-type">Duo</span>
+                    <p class="premium-cards-price">R$ 24,90/mês após o período da oferta</p>
+                    <span class="premium-cards-accounts">2 contas</span>
+                    <hr>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        2 contas Premium para o casal que mora junto
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Ouça sem anúncios, no modo offline e sob demanda
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Faça um plano pré-pago ou uma assinatura
+                    </div>
+                    <div class="start-button" id="start-button-2">
+                        <a href="/br/plan/individual"><button class="start-2">COMEÇAR</button></a>
+                    </div>
+                    <div class="terms-2">
+                        <p id="terms-2-2"><a class="terms-underline" href="google.com">Sujeito a Termos e Condições</a>.
+                            O mês grátis não está disponível para usuários que já experimentaram o Premium.</p>
+                    </div>
+                </div>
+                <div class="premium-cards">
+                    <div class="header-premium-cards">
+                        <span class="premium-cards-header-blue">1 mês grátis ao assinar</span>
+                        <span class="premium-cards-payment">Pagamento único disponível</span>
+                    </div>
+                    <span class="premium-cards-type">Família</span>
+                    <p class="premium-cards-price">R$ 34,90/mês após o período da oferta</p>
+                    <span class="premium-cards-accounts">Até 6 contas</span>
+                    <hr>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        6 contas Premium para familiares que moram no mesmo endereço
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Bloqueie músicas com conteúdo explícito
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Ouça sem anúncios, no modo offline e sob demanda
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Spotify Kids: um aplicativo separado, feito especialmente para crianças
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Faça um plano pré-pago ou uma assinatura
+                    </div>
+                    <div class="start-button" id="start-button-3">
+                        <a href="/br/plan/individual"><button class="start-2">COMEÇAR</button></a>
+                    </div>
+                    <div class="terms-2">
+                        <p id="terms-2-3"><a class="terms-underline" href="google.com">Sujeito a Termos e Condições</a>.
+                            O mês grátis não está disponível para usuários que já experimentaram o Premium.</p>
+                    </div>
+                </div>
+                <div class="premium-cards">
+                    <div class="header-premium-cards">
+                        <span class="premium-cards-header-blue">1 mês grátis ao assinar</span>
+                        <span class="premium-cards-payment">Pagamento único disponível</span>
+                    </div>
+                    <span class="premium-cards-type">Universitário</span>
+                    <p class="premium-cards-price">R$ 9,90/mês após o período da oferta</p>
+                    <span class="premium-cards-accounts">1 contas</span>
+                    <hr>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Desconto especial para estudantes universitários que tenham direito à oferta
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Ouça músicas sem anúncios
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Ouça em qualquer lugar — até no modo offiline
+                    </div>
+                    <div class="premium-details">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label="">
+                            <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline>
+                        </svg>
+                        Faça um plano pré-pago ou uma assinatura
+                    </div>
+                    <div class="start-button" id="start-button-4">
+                        <a href="/br/plan/individual"><button class="start-2">COMEÇAR</button></a>
+                    </div>
+                    <div class="terms-2">
+                        <p id="terms-2-4">Oferta disponível somente para estudantes de instituições de ensino superior
+                            credenciadas. O mês grátis não está disponível para usuários que já experimentaram o
+                            Premium. <a class="terms-underline" href="google.com"> Sujeito aos Termos e Condições</a> da
+                            oferta do Spotify de desconto para universitários.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="bottom">
+        <div id="spotify-logo-bottom">
+            <a href="https://open.spotify.com/" target="_blanket"><img src="images/spotify-logo.svg" alt="Spotify Logo"></a>
+        </div>
+        <div class="links-bottom">
+            <li>
+                <span>EMPRESA</span>
+                <a href="https://www.spotify.com/br/about-us/contact">Sobre</a>
+                <a href="https://www.lifeatspotify.com">Empregos</a>
+                <a href="https://newsroom.spotify.com">For the Record</a>
+            </li>
+            <li>
+                <span>COMUNIDADES</span>
+                <a href="https://artists.spotify.com">Para Artistas</a>
+                <a href="https://developer.spotify.com">Desenvolvedores</a>
+                <a href="https://ads.spotify.com">Publicidade</a>
+                <a href="https://investors.spotify.com">Investidores</a>
+                <a href="https://spotifyforvendors.com">Fornecedores</a>
+            </li>
+            <li>
+                <span>LINKS ÚTEIS</span>
+                <a href="https://support.spotify.com">Suporte</a>
+                <a href="https://open.spotify.com">Player da Web</a>
+                <a href="https://www.spotify.com/br/free">Aplicativo móvel grátis</a>
+            </li>
+        </div>
+        <li class="social-media">
+            <a href="https://www.instagram.com/spotify/" target="_blank"><div class="social-media-circle" id="instagram" onmouseover="changeImage(this.id)" onmouseleave="originalImage(this.id)"><img src="images/instagram-logo.png" id="instagram-logo" alt="Instagram Logo"></div></a>
+            <a href="https://twitter.com/spotify" target="_blank"><div class="social-media-circle" id="twitter" onmouseover="changeImage(this.id)" onmouseleave="originalImage(this.id)"><img src="images/twitter-logo.png" id="twitter-logo" alt="Twitter Logo"></div></a>
+            <a href="https://www.facebook.com/Spotify" target="_blank"><div class="social-media-circle" id="facebook" onmouseover="changeImage(this.id)" onmouseleave="originalImage(this.id)"><img src="images/facebook-logo.png" id="facebook-logo" alt="Facebook Logo"></div></a>
+        </li>
+    </div>
+    </div>
+    <footer>
+        <div class="links">
+            <a href="https://www.spotify.com/br/legal/end-user-agreement/">Legal</a>
+            <a href="https://www.spotify.com/br/privacy">Centro de Privacidade</a>
+            <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de privacidade</a>
+            <a href="https://www.spotify.com/br/legal/cookies-policy/">Cookies</a>
+            <a href="https://www.spotify.com/br/legal/privacy-policy/#s3">Sobre anúncios</a>
+        </div>
+        <div class="links-2">
+            <a id="footer-first-row" href="https://www.spotify.com/br/select-your-country-region/">Brasil</a>
+            <p>© 2022 Spotify AB</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
